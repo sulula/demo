@@ -12,4 +12,14 @@ public class DemoController {
     public String getName() {
         return "Lily";
     }
+
+    @ResponseBody
+    public String getName(Integer id) {
+        if (id == 3) {
+            return "HaMeiMei";
+        }
+        return "Lily";
+    }
+
+
 }
