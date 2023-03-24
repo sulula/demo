@@ -18,6 +18,9 @@ public class DemoController {
         if (id == 3) {
             return "HaMeiMei";
         }
+        if (id == 6) {
+            return "Hana";
+        }
         return "Lily";
     }
 
