@@ -21,6 +21,9 @@ public class DemoController {
         if (id == 6) {
             return "Hana";
         }
+        if (id == 9) {
+            return "Happy";
+        }
         return "Lily";
     }
 
