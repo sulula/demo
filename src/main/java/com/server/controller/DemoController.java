@@ -13,6 +13,7 @@ public class DemoController {
         return "Lily";
     }
 
+    @RequestMapping("/getName")
     @ResponseBody
     public String getName(Integer id) {
         String name;
