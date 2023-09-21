@@ -22,7 +22,7 @@ public class DemoController {
             return "HanLa";
         }
         if (id == 10) {
-            return "Temp";
+            return "Ten";
         }
         if (id == 6) {
             return "Hana";
