@@ -15,7 +15,7 @@ public class DemoController {
 
     @ResponseBody
     public String getName(Integer id) {
-        String name = null;
+        String name;
         switch (id) {
             case 3:
                 name = "Lily";
