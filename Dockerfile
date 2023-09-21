@@ -1,0 +1,2 @@
+FROM java:8RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \    && echo 'Asia/Shanghai' > /etc/timezoneCOPY xxxxxxxxxx-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java","-jar","-Xms256m","-Xmx256m","/app.jar"]EXPOSE 8080
