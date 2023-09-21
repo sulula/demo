@@ -15,25 +15,28 @@ public class DemoController {
 
     @ResponseBody
     public String getName(Integer id) {
-        if (id == 3) {
-            return "HaMeiMei";
+        String name = null;
+        switch (id) {
+            case 3:
+                name = "Lily";
+                break;
+            case 5:
+                name = "HaMeiMei";
+                break;
+            case 6:
+                name = "HanLa";
+                break;
+            case 7:
+                name = "Happy";
+                break;
+            case 9:
+                name = "Ten";
+                break;
+            default:
+                name = "Fly";
         }
-        if (id == 7) {
-            return "HanLa";
-        }
-        if (id == 10) {
-            return "Ten";
-        }
-        if (id == 6) {
-            return "Hana";
-        }
-        if (id == 9) {
-            return "Happy";
-        }
-        if (id == 10) {
-            return "Nano";
-        }
-        return "Lily";
+        return name;
+
     }
 
 
