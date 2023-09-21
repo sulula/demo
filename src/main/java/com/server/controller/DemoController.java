@@ -9,12 +9,6 @@ public class DemoController {
 
     @RequestMapping("/getName")
     @ResponseBody
-    public String getName() {
-        return "Lily";
-    }
-
-    @RequestMapping("/getName")
-    @ResponseBody
     public String getName(Integer id) {
         String name;
         switch (id) {
