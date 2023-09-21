@@ -17,6 +17,9 @@ public class DemoController {
     public String getName(Integer id) {
         String name;
         switch (id) {
+            case 1:
+                name = "One";
+                break;
             case 3:
                 name = "Lily";
                 break;
