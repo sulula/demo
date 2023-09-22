@@ -15,6 +15,9 @@ public class DemoController {
             case 1:
                 name = "One1";
                 break;
+            case 2:
+                name = "Tom";
+                break;
             case 3:
                 name = "Lily";
                 break;
