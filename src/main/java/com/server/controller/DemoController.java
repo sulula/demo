@@ -11,6 +11,7 @@ public class DemoController {
     @ResponseBody
     public String getName(Integer id) {
         if (id == null) return null;
+        if (id <0 || id>10) return null;
         String[] array = {"One", "Tonny", "Lily", "Frank", "HaMeiMei", "HanLa", "Happy", "Van", "Fly", "Ten"};
         return array[id - 1];
     }
