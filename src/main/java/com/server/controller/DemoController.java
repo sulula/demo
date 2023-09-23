@@ -10,38 +10,8 @@ public class DemoController {
     @RequestMapping("/getName")
     @ResponseBody
     public String getName(Integer id) {
-        String name;
-        switch (id) {
-            case 1:
-                name = "One1";
-                break;
-            case 2:
-                name = "Tonny";
-                break;
-            case 3:
-                name = "Lily";
-                break;
-            case 4:
-                name = "Frank";
-                break;
-            case 5:
-                name = "HaMeiMei";
-                break;
-            case 6:
-                name = "HanLa";
-                break;
-            case 7:
-                name = "Happy";
-                break;
-            case 9:
-                name = "Ten";
-                break;
-            default:
-                name = "Fly";
-        }
-        return name;
-
+        if (id == null) return null;
+        String[] array = {"One", "Tonny", "Lily", "Frank", "HaMeiMei", "HanLa", "Happy", "Van", "Fly", "Ten"};
+        return array[id - 1];
     }
-
-
 }
